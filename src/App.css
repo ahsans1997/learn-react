@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 90px;
+  background-color: #bdf5bf;
+  line-height: 50px;
+}
+
+.navbar-brand{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.nav-link{
+  font-size: 20px;
+  margin-top: 6px;
+}
