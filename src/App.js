@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import './App.css';
+import About from './components/About';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
       <section>
         <TextForm heading="Enter Text To Change" />
+        <About />
       </section>
     </div>
   );
