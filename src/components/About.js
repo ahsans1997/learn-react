@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 
-export default function About() {
+
+export default function About(props) {
 
     const [toggolMode, setToggolMode] = useState({
         color: 'black',
@@ -18,6 +19,7 @@ export default function About() {
             setToggolModeBtn("Enable Light Mode");
             setSwitchText("Enable Light Mode");
             setSwitchBtn(true);
+            props.showAlert("Dark Mode has been Enabled", "success");
         }
         else {
             setToggolMode({
@@ -27,6 +29,7 @@ export default function About() {
             setToggolModeBtn("Enable Dark Mode");
             setSwitchText("Enable Dark Mode");
             setSwitchBtn(false);
+            props.showAlert("Light Mode has been Enabled", "success");
         }
     }
 
@@ -42,6 +45,7 @@ export default function About() {
             setToggolModeBtn("Enable Light Mode");
             setSwitchText("Enable Light Mode"); 
             setSwitchBtn(true);
+            props.showAlert("Dark Mode has been Enabled", "success");
         }
         else {
             setToggolMode({
@@ -51,6 +55,7 @@ export default function About() {
             setToggolModeBtn("Enable Dark Mode");
             setSwitchText("Enable Dark Mode");
             setSwitchBtn(false);
+            props.showAlert("Light Mode has been Enabled", "success");
         }
     }
 
